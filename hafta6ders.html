@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elemanları</title>
+</head>
+<body style="background-color: rgb(175, 238, 238);">
+
+    <h1 style="text-align: center; background-color: rgb(176, 224, 230);">Üye Kayıt Formu</h1>
+    <hr>
+    <form action="kayit.aspx" name="kayit" method="get" autocomplete="on" style="text-align: center;">
+<div align="center">
+        <table style="background-color: rgb(224, 255, 255);">
+            <tr>
+                <div align="left">
+                    <tr><td rowspan="22" style="background-color:rgb(237,28,36,255);"><img src="img/bayrak.jpeg" alt="bayrak1" title="bayrak1"></td></tr>
+                </div>
+                
+    </tr>
+            <tr>
+                <td>Adı  Soyadı:</td>
+                <td><input type="text" name="adsoyad" size="23" required readonly  disabled></td>
+                <tr><td><br></td></tr>
+        </tr>
+        <tr>
+            <td>E-Mail Adresiniz:</td>
+        <td><input type="email" name="mail" placeholder="a@a.com biçiminde.." maxlength="5"  disabled> </td>
+        <tr><td><br></td></tr>
+    </tr>
+    <tr>
+        <td>Web Sayfanız:</td>
+        <td><input type="url" name="web" placeholder="Bu alana link giriniz..." disabled ></td>
+        <tr><td><br></td></tr>
+    </tr>
+    <tr>
+        <td>Yaşınız:</td>
+        <td> <input type="number" name="yas"autofocus  disabled></td>
+        <tr><td><br></td></tr>
+    </tr>
+    <tr>
+        <td>Parolanız:</td>
+        <td><input type="password"></td>
+        <tr><td><br></td></tr>
+    </tr>
+    <tr>
+        <td>Özgeçmişiniz:</td>
+        <td><textarea name="ozgecmis" id="gecmis" cols="21" rows="5"></textarea></td>
+        <tr><td><br></td></tr>
+    </tr>
+    <tr>
+        <td>Ders seçiniz:</td>
+        <td><input type="checkbox" name="web" checked>Web Tasarımı</td>
+        
+    </tr>
+    <tr>
+        <td>
+            <td><input type="checkbox" name="algo">Algoritmalar ve Programlama</td>
+        </td>
+    </tr>
+    <tr>
+
+    <tr><td><br></td></tr>
+        <td>Sınıfınız</td>
+        <td ><input type="radio" name="sinif" value="1" > 1. Sınıf <br>
+            <input type="radio" name="sinif" value="2">2. Sınıf <br>
+            <input type="radio" name="sinif" value="3"checked>3. Sınıf </td>
+
+        
+    </tr>
+    <tr>
+        <tr><td><br></td></tr>
+        <td>Doğum Yeriniz:</td>
+        <td>
+            <select name="dogumYeri">
+                <option value="ankara">Ankara</option>
+                <option value="bursa" >Bursa</option>
+                <option value="konya" >Konya</option>
+                <option value="ıstanbul">İstanbul</option>
+                <option value="bartın">Bartın</option>
+        </select></td>
+    </tr>
+
+    <tr>
+        <td style="text-align: center;"><input type="reset" value="temizle"></td>
+        <td><input type="image" src="img/submitbutton.png" width="60%"></td>
+
+       <!-- <td style="text-align: center;"><input type="submit" value="kayıt ol"></td>-->
+    </tr>
+</div>
+        </table>
+        <hr>
+        <p>
+            <input type="hidden" name="gizli" value="29 Ekim">
+        </p>
+    </form>
+
+</body>
+</html>
